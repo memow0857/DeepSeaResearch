@@ -12,6 +12,7 @@
     <sprite>sprites\green_fish</sprite>
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\Tile_ground</sprite>
+    <sprite>sprites\sprite7</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tile_1</background>
