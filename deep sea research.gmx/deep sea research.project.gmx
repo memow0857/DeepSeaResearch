@@ -11,11 +11,15 @@
     <sprite>sprites\BLUE_FISH</sprite>
     <sprite>sprites\green_fish</sprite>
     <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\Tile_ground</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\Tile_1</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\SubManObj</object>
+    <object>objects\object1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Submarine</room>
