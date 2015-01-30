@@ -8,7 +8,11 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+<<<<<<< HEAD
     <event eventtype="4" ename="WaterObj1">
+=======
+    <event eventtype="0" enumb="0">
+>>>>>>> origin/master
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,8 +29,58 @@
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>speed = 1;
 
+=======
+            <string>// sprite directions
+sprite[0,0] = SubManObj_diagonal_up_left; //Up, Left
+sprite[0,1] = SubManObj; //Left
+sprite[0,2] = SubManObj_down_left; //Down, Left
+sprite[1,0] = SubManObj_back; //Up
+sprite[1,2] = SubManObj_forward; //Down
+sprite[2,0] = SubManObj_diagonal_up_right; //Up Right
+sprite[2,1] = SubManObj_right; //Right
+sprite[2,2] = SubManObj_diagonal_down_right; //Down Right
+
+// animation speed
+image_speed = 0.15;
+// xMove and yMove are more descriptive names than l and u
+var xDirection, yDirection;
+
+// since boolean values in GM are represented by 1 and 0, we can do math with them
+// so when the player is pressing D, we have: xDirection = 1 - 0 = 1
+// when the player is pressing A, we have: xDirection = 0 - 1 = -1
+// and so on
+xDirection = keyboard_check(ord('D')) - keyboard_check(ord('A'));
+yDirection = keyboard_check(ord('S')) - keyboard_check(ord('W'));
+
+// we'll only update the sprite so long as the player is not moving in the
+// x direction, or the y direction
+if (xDirection != 0 || yDirection != 0) {
+    sprite_index = sprite[xDirection + 1, yDirection + 1];
+}
+
+// since we've already got the x and y "directions", we'll just multiply
+// them by 3 to move the character 3 pixels in that direction
+x += xDirection * 3;
+y += yDirection * 3;
+// this checks if the player is moving
+if (xDirection != 0 || yDirection != 0) {
+    // if they are, then we change the sprite accordingly,
+    sprite_index = sprite[xDirection + 1, yDirection + 1];
+
+    // and make it animate
+    image_speed = 0.15;
+} else {
+    // otherwise, we know the player isn't moving, and we should adjust the sprite to reflect that
+    // we set the sprite's frame to 0, ie. the first frame
+    image_index = 0;
+
+    // and set it to not animate
+    image_speed = 0;
+}
+>>>>>>> origin/master
 </string>
           </argument>
         </arguments>
