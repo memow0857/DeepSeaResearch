@@ -82,6 +82,7 @@
     <instance objName="Wall" x="192" y="928" name="inst_A44B6AC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="192" y="896" name="inst_C999292A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="192" y="960" name="inst_85351541" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WaterObj1" x="96" y="352" name="inst_5A20445F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tile_1" x="64" y="96" w="32" h="321" xo="0" yo="0" id="10000003" name="inst_65DE3DC6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
