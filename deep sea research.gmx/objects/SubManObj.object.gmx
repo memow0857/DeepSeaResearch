@@ -9,6 +9,7 @@
   <maskName>&lt;undefined&gt;</maskName>
   <events>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <event eventtype="4" ename="WaterObj1">
 =======
     <event eventtype="0" enumb="0">
@@ -86,6 +87,8 @@ if (xDirection != 0 || yDirection != 0) {
         </arguments>
       </action>
     </event>
+=======
+>>>>>>> parent of dc1571a... Moose nops
     <event eventtype="9" enumb="87">
       <action>
         <libid>1</libid>
